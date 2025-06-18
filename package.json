@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Falite/SiteMaths/issues"
   },
-  "homepage": "https://github.com/Falite/SiteMaths#readme"
+  "homepage": "https://github.com/Falite/SiteMaths#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
 }
