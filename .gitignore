@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+src/dist/
+coverage/
+
+# Sass cache
+.sass-cache/
+*.css.map
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs & OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Env files
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Misc
+*.local
+*.bak
+*.tmp
+
+# Optionnel : ignorer le CSS compilé si tu ne veux garder que le SCSS source
+# src/dist/css/
