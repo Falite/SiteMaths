@@ -1,3 +1,7 @@
+//layout : styles de mise en page 
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .titre_principal {
     font-size: 2rem;
     font-weight: bold;

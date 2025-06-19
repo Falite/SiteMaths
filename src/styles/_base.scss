@@ -1,8 +1,11 @@
-//base
+//base : style de base pour le site
+@use 'variables' as *;
+@use 'mixins' as *;
 
 body {
     font-family: $font-stack;
-    margin: 0;
-    padding: 0;
+    margin: 1px;
+    padding: 1px;
     background-color: #297f14;
+    text-align: justify;
 }

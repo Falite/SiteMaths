@@ -1,0 +1,11 @@
+//composants : styles de composants spécifiques (comme les boutons par exemple)
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.bouton-centre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    width: fit-content;
+}

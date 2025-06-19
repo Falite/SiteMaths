@@ -1,4 +1,5 @@
 //mixins 
+@use 'variables' as *;
 
 @mixin flex-centre {
     display: flex;
