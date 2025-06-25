@@ -4,34 +4,88 @@
         <title>Ressources d'exercices d'entraînement</title>
         <link rel="stylesheet" href="../dist/css/main.css">
     </head>
-    <header>
+    <body>
+        <header>
         <nav>
             <a href="index.html" class="lien">Accueil</a>
             <a href="page1.html" class="lien">Exo Maths</a>
             <a href="page2.html" class="lien">Jupyter</a>
+            <a href="page3.html" class="lien">R-Rstudio</a>
         </nav>
     </header>
-    <main>
-        <body>
+        <main>
             <h1 class="titre_principal">Ressources d'exercices d'entraînement</h1>
             <section class="introduction">
-                <p>Sur cette page, l'idée est de référencer les meilleurs ressources d'exercices de mathématiques.</p>
+                <p>Sur cette page, l'idée est de référencer les meilleurs ressources d'exercices de mathématiques, et de voir comment écrire en Latex.</p>
                 <p>
                     En licence, suivant les profils d'étudiants et de profs, il est parfois difficile à le fois de trouver des exercices spécifiques et de se contenter des TD des profs (même s'ils sont à certains égards très biens).
                     Ou même simplement les emplois du temps ou les impératifs personnels font que l'on ne peut pas assister aux TD.
                     Le meilleur site internet pour les licences, les classes préparatoires ou même les master est sans doute <a href="https://www.bibmath.net/index.php">Bibmaths</a>. 
                     Non seulement on y trouves des éléments de cours (propisitions-théorèmes et démonstrations), mais aussi un grand catalogue d'exercices corrigés et classifiés par niveau et par thème.
                 </p>
+
+                <p>
+                    Ensuite, il existe évidemment plusieurs manière de prendre des notes de cours et de corrections d'exercices… quoi qu'il en soit, je vous recommande d'essayer d'écrire en <a href="https://fr.wikipedia.org/wiki/LaTeX" target="_blank">Latex</a> (ça se prononce "La-tèque").<br>
+                    C'est un langage de balisage qui permet d'écrire des formules mathématiques de manière simple et efficace, devenue la norme dans le milieu universitaire et très utilisé dans les interfaces de rédaction de documents scientifiques, y compris dans les markdown Jupyter ou R-Studio.<br>
+                    "balisage" signifie que l'on écrit du texte avec des balises pour indiquer la mise en forme, comme les titres, les sous-titres, les listes, les formules mathématiques, etc. Par exemple, pour écrire une formule mathématique en Latex, on utilise des symboles spéciaux pour indiquer les opérations et les variables.
+                </p>
                 <a class="bouton-centre" href="https://bibmath.net/" target="_blank" title="Aller sur Bibmaths">
                     <img src="../assets/images/Bibmaths-logo.png" alt="Bibmaths" />
                 </a>
+            </section>
+            <section class="tutoriel">
+                <h2>Utilisation de Bibmaths</h2>
                 <p>
-                    En cliquant 
+                    En cliquant sur le site, on voit sur la barre de navigation en haut à gauche, les différents niveaux d'études.<br>
+                    En cliquant sur Supérieur, on a le choix entre Math Sup, Math Spé, Capes, Agreg Interne et BTS. les différentes pages couvrent plus ou moins fidèlement le programme de chaque concours/ année de classe préparatoire.<br>
+                    Mais le plus intéressant reste l'onglet "Bibliothèques > Bibliothèques d'exercices" : 
+                </p>
+                <a class="capture" target="_blank" title="Capture d'écran de Bibmaths">
+                    <img src="../assets/images/bibli-Exo-Bibmaths.png" alt="La Bibliothèque d'exercices de Bibmaths" />
+                </a>
+                <p>
+                    Les feuilles d'exercices sont classées par thèmes dans l'arborescence, et les feuilles commencent par des exercices simples et deviennent de plus en plus difficiles et catégoriques au fur et à mesure que l'on descend.<br>
+                    Il y a deux menus déroulants : le premier pour les indications et le second pour la correction des exercices.<br>
+                    Attention, parfois les corrections sont plus concises que détaillées, idem pour les indications.
+                </p>
+                <p class="aparté">
+                    Il est possible que certaines pages soient un peu "légères" en terme de contenu, auquel cas la seule solution est d'aller chiner des livres dans la bibliothèque universitaire ou en version numérique…<br>
+                    Aussi, dans le cas où vous avez de très grosses ambitions (comme passer l'agrégation, passer un concours…) vous aurez le même problème donc même solution que ci dessus ou alors penchez vous sur les annales de gros concours.<br>
+                    
                 </p>
             </section>
-        </body>
-    </main>
-    <footer>
+            <section class="tutoriel">
+                <h2>Écrire en Latex</h2>
+                <p>
+                    Pour écrire en Latex, il existe plusieurs éditeurs en ligne, mais je vous recommande d'utiliser Overleaf, qui est un éditeur de texte collaboratif en ligne pour le langage LaTeX. Il permet de créer des documents scientifiques, des articles, des rapports et bien plus encore.
+                    Il est très utilisé dans le milieu académique et professionnel pour la rédaction de documents techniques et scientifiques.
+                </p>
+                <a class="bouton-centre" href="https://www.overleaf.com/" target="_blank" title="Aller sur Overleaf">
+                    <img src="../assets/images/logo-overleaf.png" alt="Overleaf" />
+                </a>
+                <h2>Découverte de l'interface Overleaf</h2>
+                <a class="capture" target="_blank" title="Capture d'écran d'Overleaf">
+                    <img src="../assets/images/Interface-OVL.png" alt="La Bibliothèque d'exercices de Bibmaths" />
+                </a>
+                <p>
+                    Quand vous démarrez un projet, vous avez un fichier <code>main.tex</code> qui est le fichier principal de votre projet. Simplement, vous pouvez créer d'autres fichiers .tex pour organiser votre projet, 
+                    par exemple un fichier pour chaque chapitre ou section de votre document puis l'inclure à n'importe quelle place en utilisant la commande <code>\include{nom_du_fichier}</code>.<br>
+                    Dans la capture d'écran ci-dessus, on voit que le fichier <code>main.tex</code> est ouvert dans l'éditeur de texte à gauche, et le rendu du document est affiché à droite.<br>
+                    La numérotation est automatique et se met à jour au fur et à mesure que vous ajoutez des sections et sous-sections.<br>
+                    Les formules mathématiques sont écrites entre des balises <code>$...$</code> pour les formules en ligne, ou entre <code>\[...\]</code> pour les formules en bloc.<br>
+                    Dans mon petit exemple, <code>\int</code> désigne le signe "intégrale", <code>_0^x</code> collé à l'intègre indique que l'on intègre de 0 à x, et <code>\exp(-2x)</code> indique l'exponentielle en -2x.<br>
+                </p>
+                <p>
+                    Pour apprendre quelque symboles, il y a <a href="https://www.normalesup.org/~glafon/eiffel19/symboles_latex.pdf" target="_blank">ce document</a> qui est très utile, mais il y en a plein d'autres sur internet.<br>
+                    Vous pouvez évidemment vous aider de l'IA générative ou pour un symbole en particulier, le dessiner sur <a href="https://detexify.kirelabs.org/classify.html" targer="_blank">Detexify</a> qui vous renverra le code Latex correspondant au symbole.<br>
+                </p>
+                <h2>Latex sur Pages</h2>
+                
+            </section>
+        </main>
+        <footer>
 
-    </footer>
+        </footer>
+    </body>
+    
     </html>

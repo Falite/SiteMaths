@@ -2,6 +2,26 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+.capture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid $couleur-tuto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* height supprimé pour laisser l'image s'adapter */
+}
+
+.capture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .bouton-centre {
     display: flex;
     align-items: center;
@@ -9,3 +29,10 @@
     margin: 30px auto;
     width: fit-content;
 }
+
+.tutoriel {
+    background-color: $couleur-tuto;
+    margin: 20px auto;
+    padding: 20px;
+}
+
