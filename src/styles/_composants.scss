@@ -75,8 +75,10 @@
 
 .aparté {
     background-color: $couleur-aparte;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    @include bulle-format;
+}
+
+.apprendre {
+    background-color: $couleur-apprendre;
+    @include bulle-format;
 }
