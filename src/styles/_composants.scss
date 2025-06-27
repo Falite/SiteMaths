@@ -1,6 +1,7 @@
 //composants : styles de composants spécifiques (comme les boutons par exemple)
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'sass:color';
 
 .capture {
     display: flex;
@@ -26,8 +27,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     margin: 30px auto;
     width: fit-content;
+    background: linear-gradient(
+        90deg,
+        $couleur-btn-tuto 60%,
+        color.adjust($couleur-btn-tuto, $lightness: 10%)
+    );
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+
+    img {
+        height: 36px;
+        width: auto;
+        display: block;
+        transition: filter 0.2s;
+    }
+
+    &:hover, &:focus {
+        background: linear-gradient(
+            90deg,
+            color.adjust($couleur-btn-tuto, $lightness: -5%) 60%,
+            color.adjust($couleur-btn-tuto, $lightness: 5%)
+        );
+        transform: translateY(-2px) scale(1.06);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+        img {
+            filter: brightness(1.15) drop-shadow(0 2px 6px rgba(0,0,0,0.10));
+        }
+    }
+
+    &:active {
+        transform: scale(0.97);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
 }
 
 .tutoriel {
@@ -36,3 +73,10 @@
     padding: 20px;
 }
 
+.aparté {
+    background-color: $couleur-aparte;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

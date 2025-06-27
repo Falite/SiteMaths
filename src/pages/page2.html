@@ -24,6 +24,7 @@
                     Jupyter fonctionne en local, c'est à dire que vous l'installez sur votre ordinateur et il se lance sur votre navigateur par défaut.
                 </p>
             <section class="tutoriel">
+                <h2>Installation de Jupyter</h2>
                  <p>Jupyter est un environnement de développement interactif qui permet de créer des notebooks contenant du code, des visualisations et du texte. Pour l'installer, suivez les étapes ci-dessous :</p>
                 <ol>
                     <li>Assurez-vous d'avoir Python installé sur votre machine. Vous pouvez télécharger Python depuis le site officiel : <a href="https://www.python.org/downloads/" target="_blank">Télécharger Python</a>.</li>
@@ -36,11 +37,39 @@
                         <pre><code>pip install jupyterlab</code></pre>
                     </li>
                     <li>Une fois l'installation terminée, vous pouvez lancer Jupyter Notebook en tapant la commande suivante dans le terminal :
-                        <pre><code>jupyterlab</code></pre>
+                        <pre><code>jupyter lab</code></pre>
                     </li>
                 <p>À ce stade, vous pouvez coder en Python sur JupyterLab</p>
+                <p class="aparté">En réalité une multitude d'interfaces existent pour faire du Python (comme Spyder, PyCharm, VS Code), Jupyter a ses défauts : par exemple les informations un peu inutiles qu'il stocke ou tout simplement son design qui est un peu brut.<br>
+                Malgré tout, il reste une bonne solution pour commencer à apprendre le langage, avec son format de feuille et ses cellules markdown.</p>
+                <h2>Ajouter des librairies Python</h2>
+                <p>Une librairie est une sorte de catalogue de commandes/fonctions pré-écrites que vous pouvez utiliser dans votre code. Par exemple, la librairie NumPy est très utilisée pour le calcul numérique, tandis que Matplotlib est utilisée pour la visualisation de données.</p>
+                <p>Par exemple, pour installer NumPy et Matplotlib, vous pouvez respectivement utiliser les commandes suivantes dans le terminal :</p>
+                <pre><code>pip install numpy</code></pre>
+                <pre><code>pip install matplotlib</code></pre>
+                <p>Une fois installées, vous pouvez les importer dans vos notebooks Jupyter en utilisant les commandes suivantes dans une cellule de code :</p>
+                <pre><code>import numpy as np</code></pre>
+                <pre><code>import matplotlib.pyplot as plt</code></pre>
+                <p>Vous pouvez maintenant utiliser ces librairies pour effectuer des calculs numériques et créer des graphiques dans vos notebooks Jupyter.</p>
+                <p>Pour plus d'informations sur Jupyter et ses fonctionnalités, vous pouvez consulter la documentation officielle : <a href="https://jupyter.org/documentation" target="_blank">Documentation Jupyter</a>.</p>
+
+                <h2>Les markdown sur Jupyter</h2>
+                <p>Quand vous cliquez sur une cellule de votre feuille Jupyter, vous pouvez changer son format :</p>
+                <p class="aparté">L'interface peut changer dans le temps pour cause de mise à jour… à priori les boutons ne devraient pas trop bouger mais sait-on jamais.<br>
+                Mon interface est un peu différente de celle d'un utilisateur novice, j'ai notamment ajouté le plug-in Git, n'y faites pas trop attention.</p>
+                <a class="capture" target="_blank" title="Capture d'écran de Jupyter">
+                    <img src="../assets/images/capture-Jupyter.png" alt="Les cellules de Jupyter" />
+                </a>
+                <p>Ci dessus le menu déroulant dans la barre au dessus de la feuille. Sur la capture, il est écrit "markdown" car la cellule sélectionnée (mis en évidence du fait de la barre verticale bleue à sa gauche) est une cellule markdown.<br>
+                La cellule n'exécute pas de code mais comporte au contraire du texte formaté.</p>
+                <a class="capture" target="_blank" title="Capture d'écran de Jupyter markdown">
+                    <img src="../assets/images/capture-markdown-Jupyter.png" alt="Les cellules markdown de Jupyter" />
+                </a>
+                <p>En double cliquant dessus (capture ci dessus) On peut voir que le titre est mis en évidence par un "#" Avant le texte "Exercice 3" et du LaTex est écrit pour écrire la formule. Je vous invite à consulter la page <a href="page1.html">Exo Maths</a> où je donne plus d'informations sur le langage LaTex.</p>
+                <p class="aparté">Finalement peu de personnes prennent le temps de se servir des markdown dans leur feuille Jupyter, mais pour un étudiant en licence, il est très utile de prendre le temps plutôt que de laborieusement commenter son code Python dans les cellules de code.<br>
             </section>
             <section class="tutoriel sage">
+                <h2>Utiliser Sage avec Jupyter</h2>
                 <p>Sage est un langage différent de Python, pour l'utiliser sur JupyterLab, vous devez installer Sage puis installer son noyau dans Jupyter.<br>
                 Ci dessous un bouton pour accéder à SageCell, un site sur lequel vous pouvez d'ores et déjà utiliser Sage sans installation.</p>
                 <a class="bouton-centre" href="https://sagecell.sagemath.org/" target="_blank" title="Accéder à SageCell">
