@@ -71,10 +71,16 @@
     background-color: $couleur-tuto;
     margin: 20px auto;
     padding: 20px;
+    @include bulle-format;
 }
 
 .aparté {
     background-color: $couleur-aparte;
+    @include bulle-format;
+}
+
+.IA {
+    background-color: color.adjust($couleur-IA, $lightness: -10%);
     @include bulle-format;
 }
 

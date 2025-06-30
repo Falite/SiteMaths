@@ -3,6 +3,8 @@
         <meta charset="utf-8">
         <title>Ressources d'exercices d'entraînement</title>
         <link rel="stylesheet" href="../dist/css/main.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
@@ -16,7 +18,9 @@
         <main>
             <h1 class="titre_principal">Ressources d'exercices d'entraînement</h1>
             <section class="introduction">
-                <p>Sur cette page, l'idée est de référencer les meilleurs ressources d'exercices de mathématiques, et de voir comment écrire en Latex.</p>
+                <p>
+                    Sur cette page, l'idée est de référencer les meilleurs ressources d'exercices de mathématiques, et de voir comment écrire en Latex.
+                </p>
                 <p>
                     En licence, suivant les profils d'étudiants et de profs, il est parfois difficile à le fois de trouver des exercices spécifiques et de se contenter des TD des profs (même s'ils sont à certains égards très biens).
                     Ou même simplement les emplois du temps ou les impératifs personnels font que l'on ne peut pas assister aux TD.
@@ -31,7 +35,7 @@
                 </p>
                 <a class="bouton-centre" href="https://bibmath.net/" target="_blank" title="Aller sur Bibmaths">
                     <img src="../assets/images/Bibmaths-logo.png" alt="Bibmaths" />
-                </a>
+                </a><br>
             </section>
             <section class="tutoriel">
                 <h2>Utilisation de Bibmaths</h2>
@@ -40,9 +44,9 @@
                     En cliquant sur Supérieur, on a le choix entre Math Sup, Math Spé, Capes, Agreg Interne et BTS. les différentes pages couvrent plus ou moins fidèlement le programme de chaque concours/ année de classe préparatoire.<br>
                     Mais le plus intéressant reste l'onglet "Bibliothèques > Bibliothèques d'exercices" : 
                 </p>
-                <a class="capture" target="_blank" title="Capture d'écran de Bibmaths">
+                <a class="capture" href="../assets/images/bibli-Exo-Bibmaths.png" target="_blank" title="Capture d'écran de Bibmaths">
                     <img src="../assets/images/bibli-Exo-Bibmaths.png" alt="La Bibliothèque d'exercices de Bibmaths" />
-                </a>
+                </a><br>
                 <p>
                     Les feuilles d'exercices sont classées par thèmes dans l'arborescence, et les feuilles commencent par des exercices simples et deviennent de plus en plus difficiles et catégoriques au fur et à mesure que l'on descend.<br>
                     Il y a deux menus déroulants : le premier pour les indications et le second pour la correction des exercices.<br>
@@ -62,42 +66,56 @@
                 </p>
                 <a class="bouton-centre" href="https://www.overleaf.com/" target="_blank" title="Aller sur Overleaf">
                     <img src="../assets/images/logo-overleaf.png" alt="Overleaf" />
-                </a>
+                </a><br>
                 <h2>Découverte de l'interface Overleaf</h2>
-                <a class="capture" target="_blank" title="Capture d'écran d'Overleaf">
+                <a class="capture" href="../assets/images/Interface-OVL.png" target="_blank" title="Capture d'écran d'Overleaf">
                     <img src="../assets/images/Interface-OVL.png" alt="La Bibliothèque d'exercices de Bibmaths" />
-                </a>
+                </a><br>
                 <p>
                     Quand vous démarrez un projet, vous avez un fichier <code>main.tex</code> qui est le fichier principal de votre projet. Simplement, vous pouvez créer d'autres fichiers .tex pour organiser votre projet, 
                     par exemple un fichier pour chaque chapitre ou section de votre document puis l'inclure à n'importe quelle place en utilisant la commande <code>\include{nom_du_fichier}</code>.<br>
                     Dans la capture d'écran ci-dessus, on voit que le fichier <code>main.tex</code> est ouvert dans l'éditeur de texte à gauche, et le rendu du document est affiché à droite.<br>
                     La numérotation est automatique et se met à jour au fur et à mesure que vous ajoutez des sections et sous-sections.<br>
                     Les formules mathématiques sont écrites entre des balises <code>$...$</code> pour les formules en ligne, ou entre <code>\[...\]</code> pour les formules en bloc.<br>
-                    Dans mon petit exemple, <code>\int</code> désigne le signe "intégrale", <code>_0^x</code> collé à l'intègre indique que l'on intègre de 0 à x, et <code>\exp(-2x)</code> indique l'exponentielle en -2x.<br>
+                </p>
+                <p>
+                    Dans mon petit exemple, "<code>\int</code>" désigne \( \int \), "<code>_0^x</code>" collé à l'intègre indique que l'on intègre de \(0\) à \(x\), et "<code>\exp(-2x)</code>" indique \( \exp(-2x) \).<br>
                 </p>
                 <p>
                     Pour apprendre quelque symboles, il y a <a href="https://www.normalesup.org/~glafon/eiffel19/symboles_latex.pdf" target="_blank">ce document</a> qui est très utile, mais il y en a plein d'autres sur internet.<br>
-                    Vous pouvez évidemment vous aider de l'IA générative ou pour un symbole en particulier, le dessiner sur <a href="https://detexify.kirelabs.org/classify.html" targer="_blank">Detexify</a> qui vous renverra le code Latex correspondant au symbole.<br>
+                    Vous pouvez évidemment vous aider de l'IA générative ou pour un symbole en particulier, le dessiner sur Detexify qui vous renverra le code Latex correspondant au symbole :<br>
                 </p>
+                <a class="bouton-centre" href="https://detexify.kirelabs.org/classify.html" target="_blank"
+                        title="Aller sur Detexify">
+                        <img src="../assets/images/logo-Detexify.jpg" alt="Detexify" />
+
+                    </a><br>
                 <p class="aparté">
                     Effectivement il existe d'autres éditeurs de texte pour écrire en Latex, comme TeXstudio, TeXworks, ou encore Kile. Mais Overleaf est très pratique car il est en ligne et permet de collaborer facilement avec d'autres personnes.<br>
                     Le défaut est qu'effectivement il stocke sur ses serveurs vos projets, lesquels ne sont pas infaillibles, donc si vous avez des projets importants, pensez à les sauvegarder régulièrement sur votre ordinateur ou sur un autre service de stockage en ligne.<br>
+                    
                 <h2>MacOS : Latex sur Pages</h2>
                 <p>
-                    Sur MacOS, vous pouvez utiliser l'application Pages pour créer des documents avec des formules LaTeX :
+                    Sur MacOS, vous pouvez utiliser l'application Pages (l'équivalent de Word sur Mac) pour créer des documents avec des formules LaTeX : <br>
                 </p>
-                <a class="capture" target="_blank" title="Capture d'écran de Pages avec Latex">
+                <a class="capture" href="../assets/images/capture-Pages.png" target="_blank" title="Capture d'écran de Pages avec Latex">
                     <img src="../assets/images/capture-Pages.png" alt="Pages avec Latex" />
-                </a>
+                </a><br>
                 <p>
-                    Sur la capture, je vais sur Insérer > Équation… et une petite fenêtre s'ouvre : 
+                    Sur la capture, je vais sur Insérer > Équation… et une petite fenêtre s'ouvre : <br>
+                    (Notez bien : le raccourci clavier indiqué <code>option + command + E</code> permet de l'ouvrir plus rapidement, vous allez devoir vous en servir souvent !)
                 </p>
-                <a class="capture" target="_blank" title="Capture d'écran de la fenêtre d'équation de Pages">
+                <a class="capture" href="../assets/images/capture-fenêtre-Latex.png" target="_blank" title="Capture d'écran de la fenêtre d'équation de Pages">
                     <img src="../assets/images/capture-fenêtre-Latex.png" alt="Fenêtre d'équation de Pages" />
-                </a>
+                </a><br>
                 <p>
                     Et vous pouvez écrire votre équation, laquelle s'insérera dans votre document au niveau du curseur de saisie.<br>
                 </p>
+                <p class="aparté">
+                    Le Latex sur Pages ne propose pas toutes les bibliothèques de symboles et de commandes que l'on trouve dans Overleaf ou autre… <br>
+                    il n'empêche que Pages est assez sympa et permet d'éditer des documents plus beaux et moins normés que les documents LaTex classiques.<br>
+                    Dans une optique de prise de notes en cours ou autre, il est pratique et rapide à utiliser je trouve, mais ce n'est peut être pas l'avis de tout le monde.<br>
+
             </section>
         </main>
         <footer>

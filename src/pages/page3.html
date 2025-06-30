@@ -16,32 +16,62 @@
         <main>
             <h1 class="titre_principal">Installer R-Rstudio</h1>
             <section class="introduction">
-                <p>R est un langage de programmation et un environnement logiciel pour le calcul statistique et la visualisation de données. Il est largement utilisé dans les domaines de la statistique, de l'analyse de données et de la science des données.</p>
-                <p>RStudio est un environnement de développement intégré (IDE) pour R. En licence, il est probable qu'il soit abordé ou proposé en UE à choisir (comme l'UEO à l'Université de La Réunion)</p>
-            </section>
-            <section class="tutoriel">
-                <p>Pour installer R et RStudio, suivez les étapes sur le site de <a href="https://posit.co/download/rstudio-desktop/">Posit</a>. Attention, il faut télécharger et installer R et Rstudio (qui sont deux applications différentes)</p>
-                <p class="apprendre">Au cas où vous débutez et/ou avez des difficultés avec R, je vous conseille ce <a href="https://openclassrooms.com/fr/courses/8248096-initiez-vous-a-r-pour-lanalyse-de-donnees">Cours</a> OpenClassroom pour bien débuter.</p>
-                <h2>Les Markdown sur R-Studio</h2>
-                <p>R-Studio est assez simple dans son fonctionnement :</p>
-                <a class="capture" target="_blank" title="Capture d'écran de R-Studio">
-                    <img src="../assets/images/capture-RStudio-feuilles.png" alt="Interface de R-Studio" />
-                </a>
-                <p>En ouvrant l'application, vous avez en bas à gauche la console R (qui est l'interface où sortent les résultats de vos commandes), en bas à droite une petite fenêtre d'affichage, et en haut à droite une fenêtre avec quelques informations.<br>
-                    Quand vous appuyez sur le bouton "New File" dans la barre du haut tout à gauche, l'application vous propose une poignée de choix, évidemment vous risquez d'écrire plusieurs fichiers de code "R Script", mais ce qui m'intéresse ici est le "R Markdown".<br></p>
-                    <a class="capture" target="_blank" title="Capture d'écran de R-Studio Markdown">
-                        <img src="../assets/images/capture-RMarkdown.png" alt="R Markdown dans R-Studio" />
-                    </a>
-                    <p>
-                    Ce format est selon mon humble avis le plus pratique et le plus simple pour écrire des commentaires, des explications, des résultats de calculs pour s'y retrouver dans votre travail. De plus, vous pouvez y insérer du LaTex entre "$" comme vous pouvez le voir ci dessus.<br>
-                    Et comme prévu, en cliquant sur "Visual" dans la barre du haut, vous pouvez voir le rendu de votre feuille Markdown :<br>
-                    </p>
-                    <a class="capture" target="_blank" title="Capture d'écran de R-Studio Markdown Visual">
-                        <img src="../assets/images/capture-RMarkdown-compilé.png" alt="R Markdown Visual dans R-Studio" />
-            
-                        </a>
+                <p>
+                    R est un langage de programmation et un environnement logiciel pour le calcul statistique et la visualisation de données. Il est largement utilisé dans les domaines de la statistique, de l'analyse de données et de la science des données.
+                </p>
+                <p>
+                    RStudio est un environnement de développement intégré (IDE) pour R. En licence, il est probable qu'il soit abordé ou proposé en UE à choisir (comme l'UEO à l'Université de La Réunion)
                 </p>
             </section>
+            <section class="tutoriel">
+                <p>
+                    Pour installer R et RStudio, suivez les étapes sur le site de <a href="https://posit.co/download/rstudio-desktop/">Posit</a>. Attention, il faut télécharger et installer R et Rstudio (qui sont deux applications différentes).<br>
+                    Comme pour Jupyter, je vous conseille d'organiser vos projets dans un ou des dossiers pour vous y retrouver.
+                </p>
+                <p class="apprendre">
+                    Au cas où vous débutez et/ou avez des difficultés avec R, je vous conseille ce <a href="https://openclassrooms.com/fr/courses/8248096-initiez-vous-a-r-pour-lanalyse-de-donnees">Cours</a> OpenClassroom pour bien débuter.
+                </p>
+                <h2>Les Markdown sur R-Studio</h2>
+                <p>
+                    R-Studio est assez simple dans son fonctionnement :
+                </p>
+                <a class="capture" href="../assets/images/capture-RStudio-feuilles.png" target="_blank" title="Capture d'écran de R-Studio">
+                    <img src="../assets/images/capture-RStudio-feuilles.png" alt="Interface de R-Studio" />
+                </a><br>
+                <p>En ouvrant l'application, vous avez en bas à gauche la console R (qui est l'interface où sortent les résultats de vos commandes), en bas à droite une petite fenêtre d'affichage, et en haut à droite une fenêtre avec quelques informations.<br>
+                    Quand vous appuyez sur le bouton "New File" dans la barre du haut tout à gauche, l'application vous propose une poignée de choix, évidemment vous risquez d'écrire plusieurs fichiers de code "R Script", mais ce qui m'intéresse ici est le "R Markdown".<br></p>
+                    <a class="capture" href="../assets/images/capture-RMarkdown.png" target="_blank" title="Capture d'écran de R-Studio Markdown">
+                        <img src="../assets/images/capture-RMarkdown.png" alt="R Markdown dans R-Studio" />
+                    </a><br>
+                <p>
+                    Ce format est selon mon humble avis le plus pratique et le plus simple pour écrire des commentaires, des explications, des résultats de calculs pour s'y retrouver dans votre travail. De plus, vous pouvez y insérer du LaTex entre "$" comme vous pouvez le voir ci dessus.<br>
+                    Et comme prévu, en cliquant sur "Visual" dans la barre du haut, vous pouvez voir le rendu de votre feuille Markdown :<br>
+                </p>
+                    <a class="capture" href="../assets/images/capture-RMarkdown-compilé.png" target="_blank" title="Capture d'écran de R-Studio Markdown Visual">
+                        <img src="../assets/images/capture-RMarkdown-compilé.png" alt="R Markdown Visual dans R-Studio" />
+                    </a><br>
+                </p>
+            </section>
+            <section class="IA">
+                Dans R-Studio, Il est possible d'ajouter Copilot, l'IA de Microsoft, pour vous aider à écrire du code R, en vous faisant des suggestions de code : <br>
+                <p>
+                    <a class="capture" href="../assets/images/capture-RStudio-Tools.png" target="_blank" title="Capture d'écran de R-Studio Tools">
+                        <img src="../assets/images/capture-RStudio-Tools.png" alt="Copilot dans R-Studio" />
+                    </a><br>
+                </p>
+                <p>
+                    Il suffit de cliquer sur "Tools" puis sur "Globals Options…" 
+                </p>
+                <p>
+                    <a class="capture" href="../assets/images/capture-RStudio-Tools2.png" target="_blank" title="Capture d'écran de R-Studio Tools Globals">
+                        <img src="../assets/images/capture-RStudio-Tools2.png" alt="Copilot dans R-Studio Globals" />
+                    </a><br>
+                </p>
+                <p>
+                    Ensuite il suffit de cliquer sur "Copilot" tout en bas, et de cocher la case "Enable Copilot" pour l'activer. Vous pouvez aussi choisir de l'activer uniquement pour les projets R-Studio, ou pour tous les projets.
+                </p>
+            </section>
+            
         </main>
     </body>
 </html>
