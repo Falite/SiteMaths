@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Falite/SiteMaths#readme",
   "devDependencies": {
+    "sass": "^1.90.0",
     "typescript": "^5.8.3"
   }
 }

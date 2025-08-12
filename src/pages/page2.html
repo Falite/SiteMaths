@@ -16,6 +16,7 @@
     </header>
         <main>
             <h1 class="titre_principal">Installer et débuter sur Jupyter</h1>
+            
             <section class="introduction">
                 <p>
                     En licence de mathématiques, il est souvent demandé de maîtriser certains langages de programmation comme Python, Sagemaths, Matlab, C/C++… (dépendemment du choix des Universités).
@@ -27,16 +28,17 @@
                 </p>
             <section class="tutoriel">
                 <h2>Installation de Jupyter</h2>
+                <a href='page2-1.html'>Installation de Jupyter expliquée en détails.</a>
                  <p>Jupyter est un environnement de développement interactif qui permet de créer des notebooks contenant du code, des visualisations et du texte. Pour l'installer, suivez les étapes ci-dessous :</p>
                 <ol>
                     <li>Assurez-vous d'avoir Python installé sur votre machine. Vous pouvez télécharger Python depuis le site officiel : <a href="https://www.python.org/downloads/" target="_blank">Télécharger Python</a>.</li>
                     <li>Ouvrez un terminal ou une invite de commande.</li>
-                    <li>Vérifiez que Python et son gestionnaire de paquets pip est installé en tapant la commande suivante :
-                        <pre><code>python --version</code></pre>
-                        <pre><code>pip --version</code></pre>
+                    <li>Vérifiez que Python et son gestionnaire de paquets pip est installé en tapant la commande suivante : (attention, c'est 'pip' et non 'pip3' si vous avez l'ancienne version de Python)
+                        <pre><code>python3 --version</code></pre>
+                        <pre><code>pip3 --version</code></pre>
                     </li>
                     <li>Installez Jupyter en utilisant pip, le gestionnaire de paquets de Python, avec la commande suivante :
-                        <pre><code>pip install jupyterlab</code></pre>
+                        <pre><code>pip3 install jupyterlab</code></pre>
                     </li>
                     <li>Une fois l'installation terminée, vous pouvez lancer Jupyter Notebook en tapant la commande suivante dans le terminal :
                         <pre><code>jupyter lab</code></pre>
@@ -49,8 +51,8 @@
                 <h2>Ajouter des librairies Python</h2>
                 <p>Une librairie est une sorte de catalogue de commandes/fonctions pré-écrites que vous pouvez utiliser dans votre code. Par exemple, la librairie NumPy est très utilisée pour le calcul numérique, tandis que Matplotlib est utilisée pour la visualisation de données.</p>
                 <p>Par exemple, pour installer NumPy et Matplotlib, vous pouvez respectivement utiliser les commandes suivantes dans le terminal :</p>
-                <pre><code>pip install numpy</code></pre>
-                <pre><code>pip install matplotlib</code></pre>
+                <pre><code>pip3 install numpy</code></pre>
+                <pre><code>pip3 install matplotlib</code></pre>
                 <p>Une fois installées, vous pouvez les importer dans vos notebooks Jupyter en utilisant les commandes suivantes dans une cellule de code :</p>
                 <pre><code>import numpy as np</code></pre>
                 <pre><code>import matplotlib.pyplot as plt</code></pre>
@@ -85,13 +87,13 @@
                 <a class="bouton-centre" href="https://sagecell.sagemath.org/" target="_blank" title="Accéder à SageCell">
                     <img src="../assets/images/SageCell-logo.png" alt="SageCell" />
                 </a><br>
+                <p>
+                    <a href="page2-2.html">Installation de Sage en détail</a>
+                </p>
                 <ol>
                     <li>Téléchargez l'application Sage depuis le site officiel : <a href="https://github.com/3-manifolds/Sage_macOS/releases" target="_blank">Télécharger Sage</a>.</li>
                     <li>Installez Sage en suivant les instructions fournies sur le site.</li>
-                    <li>Une fois Sage installé, ouvrez un terminal et naviguez jusqu'au répertoire d'installation de Sage.</li>
-                    <li>Installez le noyau Sage pour Jupyter avec la commande suivante :
-                        <pre><code>./sage -pip install sagemath-jupyter</code></pre>
-                    </li>
+                    <li>Une fois Sage installé, ouvrez Sage en cliquant sur 'Notebook' et en sélectionnant 'JupyterLab'. Puis refermez.</li>
                     <li>Ensuite, lancez JupyterLab comme précédemment :
                         <pre><code>jupyter lab</code></pre>
                     </li>
